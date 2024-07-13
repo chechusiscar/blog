@@ -1,0 +1,7 @@
+.rounded {
+    border-radius: 50%;
+}
+
+.profile-image {
+    max-height: 128px;
+}
