@@ -1,0 +1,118 @@
+---
+layout: post
+title: LoveBot, an artificial intelligence case
+date: '2024-02-03 07:35:49'
+---
+
+_This is an original case I wrote in December 2022. Sharing for those preparing for MBB-style case interviews. Go case with them before Valentine's 😉_
+
+* * *
+
+## **Prompt**
+
+It is the year 2022. Our client is a startup seeking to launch an app using the GPT model. The app (codenamed LoveBot) will be designed to provide message suggestions for users who are communicating with potential romantic interests. How would you help them think about their offering?
+
+**Additional information — provide if asked**
+
+- Our client is **<u>not</u>** trying to build a dating app.
+- LoveBot operates in the following manner:
+  - User submits general content of what they want to say to their romantic interest (and tone)
+  - LoveBot sends the prompt to the paid OpenAI API which gives access to the GPT model
+  - Results from the model are rendered and displayed by LoveBot to the user
+- Our client wants to employ a freemium business model where the first five message suggestions per month are free and ad-supported. Unlimited message suggestions and an ad- free experience will be available for a monthly subscription.
+- GPT is a language generation model that can generate human-like text in response to a wide variety of prompts or questions.
+- As of 2022, there are no major competitors in the generative AI space, and ChatGPT/Google Bard/Bing Chat have not been launched yet.
+- Our client does not have a specific goal, but they want LoveBot to be profitable.
+
+### **Structuring**
+<figure class="kg-card kg-image-card kg-card-hascaption"><a href="https://mermaid.live/edit#pako:eNpVkjFvwjAQhf-K5RlUhW4ZKgHpUKlUiHRzOpjkQk4kdnQ-E1HEf69DUiR7st87f-9O9k2WtgKZyrq1Q9loYvGdFUaEtVaf9gIby0I7oY2wdQ2E5vQz22K5fBMbtdN0Bo7ErdqTrZH1EVvka-Rl6oDu7GZtM0ESleMvhJBKnMgO3MT2Sm1t1wMjozWztZ2SEnWACxgP_8Rt8jDW1QWI0YV-Iz33R1cS9iMpAo0Zjp-U1UTZf0TnHChgI2ka_xmTTUMm6gsGAYZJG3YvLqSG7j0_25zrVir3fd8ikOjtABS7r-qdGyx1K0prHFZAeux7ZMiF7IA6jVV4u9t4q5DcQAeFTMO2glr7lgtZmHso1Z5tfjWlTJk8LKTvK82QoT6R7mRa69YFFSpkS7vpPzy-xf0POaqnDw"><img src="https://mermaid.ink/img/pako:eNpVkjFvwjAQhf-K5RlUhW4ZKgHpUKlUiHRzOpjkQk4kdnQ-E1HEf69DUiR7st87f-9O9k2WtgKZyrq1Q9loYvGdFUaEtVaf9gIby0I7oY2wdQ2E5vQz22K5fBMbtdN0Bo7ErdqTrZH1EVvka-Rl6oDu7GZtM0ESleMvhJBKnMgO3MT2Sm1t1wMjozWztZ2SEnWACxgP_8Rt8jDW1QWI0YV-Iz33R1cS9iMpAo0Zjp-U1UTZf0TnHChgI2ka_xmTTUMm6gsGAYZJG3YvLqSG7j0_25zrVir3fd8ikOjtABS7r-qdGyx1K0prHFZAeux7ZMiF7IA6jVV4u9t4q5DcQAeFTMO2glr7lgtZmHso1Z5tfjWlTJk8LKTvK82QoT6R7mRa69YFFSpkS7vpPzy-xf0POaqnDw?type=png" class="kg-image" alt="" loading="lazy" width="1302" height="302"></a><figcaption><span style="white-space: pre-wrap;">Sample case structure</span></figcaption></figure>
+## **Market sizing**
+
+- Since LoveBot is a startup with Filipino founders, the primary target market to start with are Filipino singles.
+- There are 100 million people in the Philippines, about 40% are single and of which about 25% fall within the ages of 15 to 30.
+- It is estimated that 1% of the addressable market would be interested in LoveBot.
+<figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2024/02/image-2.png" class="kg-image" alt="" loading="lazy" width="1080" height="212" srcset=" __GHOST_URL__ /content/images/size/w600/2024/02/image-2.png 600w, __GHOST_URL__ /content/images/size/w1000/2024/02/image-2.png 1000w, __GHOST_URL__ /content/images/2024/02/image-2.png 1080w" sizes="(min-width: 720px) 720px"></figure>
+## **Revenues**
+<figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2024/02/image.png" class="kg-image" alt="" loading="lazy" width="1764" height="632" srcset=" __GHOST_URL__ /content/images/size/w600/2024/02/image.png 600w, __GHOST_URL__ /content/images/size/w1000/2024/02/image.png 1000w, __GHOST_URL__ /content/images/size/w1600/2024/02/image.png 1600w, __GHOST_URL__ /content/images/2024/02/image.png 1764w" sizes="(min-width: 720px) 720px"></figure>
+- 99% of users are expected to be free users.
+- RPM or revenue per thousand impressions is at $0.20.
+- Ads are presented every time a free user generates a request. An average free user generates a request 5 times a month.
+<figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2024/02/image-1.png" class="kg-image" alt="" loading="lazy" width="1080" height="312" srcset=" __GHOST_URL__ /content/images/size/w600/2024/02/image-1.png 600w, __GHOST_URL__ /content/images/size/w1000/2024/02/image-1.png 1000w, __GHOST_URL__ /content/images/2024/02/image-1.png 1080w" sizes="(min-width: 720px) 720px"></figure>
+
+#### Sample insights
+<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
+                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
+                    </svg>
+                </button>
+
+- Even though paid users account for 1% of the user base, they generate ~83% of revenues. 
+- Having said this, the free offering may still have merit since free users may ultimately be converted to paid users.
+
+## Costs
+
+- LoveBot’s main cost involve the payments made to OpenAI for the use of their API.
+- Actually, OpenAI charges different prices depending on the specific version of the model used. LoveBot wants our input regarding which specific model would be the ideal choice.
+- Other costs include:
+  - Server and technical infrastructure — $20/month
+  - Marketing via Facebook Ads — $50/month
+- LoveBot will not incur costs for salaries, rent, and utilities because the founders decided not to take a salary and that they would operate from their basement.
+
+### Model selection
+<figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2024/02/image-3.png" class="kg-image" alt="" loading="lazy" width="1768" height="968" srcset=" __GHOST_URL__ /content/images/size/w600/2024/02/image-3.png 600w, __GHOST_URL__ /content/images/size/w1000/2024/02/image-3.png 1000w, __GHOST_URL__ /content/images/size/w1600/2024/02/image-3.png 1600w, __GHOST_URL__ /content/images/2024/02/image-3.png 1768w" sizes="(min-width: 720px) 720px"></figure>
+
+**Additional information — provide if asked**
+
+- You can think of tokens as pieces of words used for natural language processing. For English text, 1 token is approximately 4 characters or 0.75 words.
+- Both prompt and completion are counted in determining the total cost based on tokens.
+
+#### Sample insights
+<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
+                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
+                    </svg>
+                </button>
+
+- OpenAI&nbsp;charges more per token for the more advanced models.
+- The Babbage and Ada models should not be chosen since the output deviates from the specific prompt given by the user.
+- DaVinci and Curie models produce identical results, with&nbsp;Curie&nbsp;costing 1/10 of&nbsp;DaVinci,&nbsp;making&nbsp;Curie&nbsp;the optimal choice.
+
+## Profit calculation
+<figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2024/02/image-4.png" class="kg-image" alt="" loading="lazy" width="1080" height="558" srcset=" __GHOST_URL__ /content/images/size/w600/2024/02/image-4.png 600w, __GHOST_URL__ /content/images/size/w1000/2024/02/image-4.png 1000w, __GHOST_URL__ /content/images/2024/02/image-4.png 1080w" sizes="(min-width: 720px) 720px"></figure>
+
+#### Sample insights
+<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
+                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
+                    </svg>
+                </button>
+
+- Since cost per request surpasses advertising revenues per request,&nbsp;LoveBot&nbsp;may consider decreasing the limit for free users.&nbsp;
+- As a percentage of revenue, net profit seems to be highly attractive, but the sufficiency of the absolute figure needs to be benchmarked against similar startups.
+
+## Risk assessment
+
+Although LoveBot appears to be profitable, what are the risks surrounding its implementation and how can these be addressed by the company?
+
+#### Sample insights: Competitive risk
+<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
+                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
+                    </svg>
+                </button>
+
+1. there is nothing proprietary about the product; if business model is successful, there is nothing to stop new entrants 
+2. the barriers to entry are very low — very limited programming knowledge is needed to make use of GPT-3 
+3. supplier has significant bargaining power; without them, core product will cease to function; may increase pricing at any point
+
+#### Sample insights: Ethical considerations
+<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
+                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
+                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
+                    </svg>
+                </button>
+
+1. model can generate potentially harmful content 
+2. question of authorship: if user takes suggestion verbatim, are they the author? ultimately, is their potential romantic interest interacting with the person or with AI? 
+3. potential use for people with harmful intent: will LoveBot contribute to make those who catfish people more convincing?
+
