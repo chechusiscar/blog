@@ -7,7 +7,7 @@ tags:
 ---
 
 ## The prevalence of gender stereotypes is a social problem
-<figure class="kg-card kg-image-card"><img src=" __GHOST_URL__ /content/images/2023/12/image-1.png" class="kg-image" alt="Gender stereotypes pose a problem since they undermine the individual dignity of the person and the notion of equal treatment in society " loading="lazy" width="1018" height="646" srcset=" __GHOST_URL__ /content/images/size/w600/2023/12/image-1.png 600w, __GHOST_URL__ /content/images/size/w1000/2023/12/image-1.png 1000w, __GHOST_URL__ /content/images/2023/12/image-1.png 1018w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2023/12/image-1.png" class="kg-image" alt="Gender stereotypes pose a problem since they undermine the individual dignity of the person and the notion of equal treatment in society " loading="lazy" width="1018" height="646" srcset="{{ site.baseurl }}content/images/size/w600/2023/12/image-1.png 600w,{{ site.baseurl }}content/images/size/w1000/2023/12/image-1.png 1000w,{{ site.baseurl }}content/images/2023/12/image-1.png 1018w" sizes="(min-width: 720px) 720px"></figure>
 ## Gender norms in the Philippines are still far from progressive
 
 Most respondents agree that…
@@ -19,7 +19,7 @@ Most respondents agree that…
 _Source:_ [_Survey from Oxfam&nbsp;Pilipinas&nbsp;and Miriam College Women and Gender Institute (2022)&nbsp;_](https://philippines.oxfam.org/latest/press-release/survey-filipinos-still-believe-gender-stereotypes-breadwinning-unpaid-care-work)
 
 ## Rigid gender roles are already impressed upon children at a young age
-<figure class="kg-card kg-image-card kg-width-wide"><img src=" __GHOST_URL__ /content/images/2023/12/image-3.png" class="kg-image" alt="" loading="lazy" width="1590" height="660" srcset=" __GHOST_URL__ /content/images/size/w600/2023/12/image-3.png 600w, __GHOST_URL__ /content/images/size/w1000/2023/12/image-3.png 1000w, __GHOST_URL__ /content/images/2023/12/image-3.png 1590w" sizes="(min-width: 1200px) 1200px"></figure>
+<figure class="kg-card kg-image-card kg-width-wide"><img src="{{ site.baseurl }}content/images/2023/12/image-3.png" class="kg-image" alt="" loading="lazy" width="1590" height="660" srcset="{{ site.baseurl }}content/images/size/w600/2023/12/image-3.png 600w,{{ site.baseurl }}content/images/size/w1000/2023/12/image-3.png 1000w,{{ site.baseurl }}content/images/2023/12/image-3.png 1590w" sizes="(min-width: 1200px) 1200px"></figure>
 ## Stereotypes limit the individuality of the person and contribute to societal inequalities
 
 - **People become who they’re not**
