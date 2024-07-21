@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: page
 title: Projects
 date: '2023-12-28 04:37:21'
 ---
