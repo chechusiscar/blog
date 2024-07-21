@@ -4,13 +4,13 @@ title: Home
 ---
 
 <div class="posts">
-  <ol>
+  <ul>
     {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">
+      <a href="{{ site.baseurl }}{{ post.url }}">
         {{ post.title }}
       </a> - {{ post.date | date_to_string }}
     </li>
     {% endfor %}
-  </ol>
+  </ul>
 </div>
