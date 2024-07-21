@@ -3,41 +3,14 @@ layout: default
 title: Home
 ---
 
-<!-- CONTENT -->
-<div class="bio">
-    	
-  <!-- PROFILE IMAGE -->
-  <img class="profile-image rounded" src="https://chechu.co/img/chechu.jpg" alt="Chechu Siscar (Joseph Regalado Aseron Siscar) - Finance and Accounting Manager"/>
-  
-  <!-- TITLE -->
-  <h1>
-      Hi, I'm <span class="highlight pink">Chechu</span>! 👋🏻
-  </h1>
-  <!-- TITLE -->
-  
-  <!-- DESCRIPTION -->
-  <p>I’m a <span class="pink text">finance and accounting manager</span> at a Fortune 100 consumer goods company. In my current role, I facilitate regional supply chain finance reporting and lead process transformation efforts to enable value creation.</p>
-
-  <p>My interests lie at the intersection of business, data, and technology. I enjoy combining my love for cutting-edge innovative solutions with business sense and economic intuition to address real-world management problems.</p>
-
-  <p>At a young age, I was already fascinated with web development and multimedia production, along with the entrepreneurial opportunities that come with these skills. Lately, I have deepening my proficiency in business analytics tools such as Python and SQL.</p>
-
-  <p>Outside of work, I love trying new things (usually food 😂) and visiting new places with friends. I also like reading, teaching, and worshipping. Check out my <a class="link-1 pink" href="https://blog.chechu.co" target="_blank">blog</a> to learn more about my interests and projects.</p> 
-
-  <p>Feel free to reach out to me via <a class="link-1 pink" href="https://www.linkedin.com/in/chechusiscar/" target="_blank">LinkedIn</a> if you have any questions or just want to say hi! Always eager to connect with like-minded people.</p>
-
-
-
-  <p class="is-social-minimal">
-      <img src="img/logo.png" class="logo" alt="Chechu Siscar's logo - Finance and Accounting Manager" />
-      <a class="social-link linkedin" href="https://www.linkedin.com/in/chechusiscar/" target="_blank"></a>
-      <a class="social-link youtube" href="https://www.youtube.com/user/ChechuSiscar" target="_blank"></a>
-      <a class="social-link instagram" href="https://www.instagram.com/chechusiscar/" target="_blank"></a>
-  </p>
-
-  
-
-  <!-- DESCRIPTION -->
-
+<div class="posts">
+  <ol>
+    {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a> - {{ post.date | date_to_string }}
+    </li>
+    {% endfor %}
+  </ol>
 </div>
-<!-- CONTENT -->
