@@ -31,20 +31,16 @@ It is the year 2022. Our client is a startup seeking to launch an app using the 
 - Since LoveBot is a startup with Filipino founders, the primary target market to start with are Filipino singles.
 - There are 100 million people in the Philippines, about 40% are single and of which about 25% fall within the ages of 15 to 30.
 - It is estimated that 1% of the addressable market would be interested in LoveBot.
-<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image-2.png" class="kg-image" alt="" loading="lazy" width="1080" height="212" srcset="{{ site.baseurl }}content/images/size/w600/2024/02/image-2.png 600w,{{ site.baseurl }}content/images/size/w1000/2024/02/image-2.png 1000w,{{ site.baseurl }}content/images/2024/02/image-2.png 1080w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image-2.png" class="kg-image" alt="" loading="lazy" width="100%"></figure>
 ## **Revenues**
-<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image.png" class="kg-image" alt="" loading="lazy" width="1764" height="632" srcset="{{ site.baseurl }}content/images/size/w600/2024/02/image.png 600w,{{ site.baseurl }}content/images/size/w1000/2024/02/image.png 1000w,{{ site.baseurl }}content/images/size/w1600/2024/02/image.png 1600w,{{ site.baseurl }}content/images/2024/02/image.png 1764w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image.png" class="kg-image" alt="" loading="lazy" width="100%"></figure>
 - 99% of users are expected to be free users.
 - RPM or revenue per thousand impressions is at $0.20.
 - Ads are presented every time a free user generates a request. An average free user generates a request 5 times a month.
-<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image-1.png" class="kg-image" alt="" loading="lazy" width="1080" height="312" srcset="{{ site.baseurl }}content/images/size/w600/2024/02/image-1.png 600w,{{ site.baseurl }}content/images/size/w1000/2024/02/image-1.png 1000w,{{ site.baseurl }}content/images/2024/02/image-1.png 1080w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image-1.png" class="kg-image" alt="" loading="lazy" width="100%"></figure>
 
 #### Sample insights
-<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
-                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
-                    </svg>
-                </button>
+
 
 - Even though paid users account for 1% of the user base, they generate ~83% of revenues. 
 - Having said this, the free offering may still have merit since free users may ultimately be converted to paid users.
@@ -59,7 +55,7 @@ It is the year 2022. Our client is a startup seeking to launch an app using the 
 - LoveBot will not incur costs for salaries, rent, and utilities because the founders decided not to take a salary and that they would operate from their basement.
 
 ### Model selection
-<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image-3.png" class="kg-image" alt="" loading="lazy" width="1768" height="968" srcset="{{ site.baseurl }}content/images/size/w600/2024/02/image-3.png 600w,{{ site.baseurl }}content/images/size/w1000/2024/02/image-3.png 1000w,{{ site.baseurl }}content/images/size/w1600/2024/02/image-3.png 1600w,{{ site.baseurl }}content/images/2024/02/image-3.png 1768w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image-3.png" class="kg-image" alt="" loading="lazy" width="100%"></figure>
 
 **Additional information — provide if asked**
 
@@ -67,25 +63,17 @@ It is the year 2022. Our client is a startup seeking to launch an app using the 
 - Both prompt and completion are counted in determining the total cost based on tokens.
 
 #### Sample insights
-<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
-                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
-                    </svg>
-                </button>
+
 
 - OpenAI&nbsp;charges more per token for the more advanced models.
 - The Babbage and Ada models should not be chosen since the output deviates from the specific prompt given by the user.
 - DaVinci and Curie models produce identical results, with&nbsp;Curie&nbsp;costing 1/10 of&nbsp;DaVinci,&nbsp;making&nbsp;Curie&nbsp;the optimal choice.
 
 ## Profit calculation
-<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image-4.png" class="kg-image" alt="" loading="lazy" width="1080" height="558" srcset="{{ site.baseurl }}content/images/size/w600/2024/02/image-4.png 600w,{{ site.baseurl }}content/images/size/w1000/2024/02/image-4.png 1000w,{{ site.baseurl }}content/images/2024/02/image-4.png 1080w" sizes="(min-width: 720px) 720px"></figure>
+<figure class="kg-card kg-image-card"><img src="{{ site.baseurl }}content/images/2024/02/image-4.png" class="kg-image" alt="" loading="lazy" width="100%"></figure>
 
 #### Sample insights
-<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
-                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
-                    </svg>
-                </button>
+
 
 - Since cost per request surpasses advertising revenues per request,&nbsp;LoveBot&nbsp;may consider decreasing the limit for free users.&nbsp;
 - As a percentage of revenue, net profit seems to be highly attractive, but the sufficiency of the absolute figure needs to be benchmarked against similar startups.
@@ -95,22 +83,14 @@ It is the year 2022. Our client is a startup seeking to launch an app using the 
 Although LoveBot appears to be profitable, what are the risks surrounding its implementation and how can these be addressed by the company?
 
 #### Sample insights: Competitive risk
-<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
-                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
-                    </svg>
-                </button>
+
 
 1. there is nothing proprietary about the product; if business model is successful, there is nothing to stop new entrants 
 2. the barriers to entry are very low — very limited programming knowledge is needed to make use of GPT-3 
 3. supplier has significant bargaining power; without them, core product will cease to function; may increase pricing at any point
 
 #### Sample insights: Ethical considerations
-<button class="kg-toggle-card-icon" aria-label="Expand toggle to read content">
-                    <svg id="Regular" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 24 24">
-                        <path class="cls-1" d="M23.25,7.311,12.53,18.03a.749.749,0,0,1-1.06,0L.75,7.311"></path>
-                    </svg>
-                </button>
+
 
 1. model can generate potentially harmful content 
 2. question of authorship: if user takes suggestion verbatim, are they the author? ultimately, is their potential romantic interest interacting with the person or with AI? 
