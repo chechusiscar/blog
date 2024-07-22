@@ -1,3 +1,11 @@
+
+.sidebar-logo {
+    max-height: 30px;
+}
+
+
+/* Bio page */
+
 .rounded {
     border-radius: 50%;
 }
