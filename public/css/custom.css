@@ -6,6 +6,12 @@
 }
 
 
+figcaption {
+    color: #aaa;
+    font-size: 1.4rem;
+    line-height: 1.4;
+}
+
 /* Bio page */
 
 .rounded {
