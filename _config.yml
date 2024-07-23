@@ -26,6 +26,7 @@ baseurl: "/blog/" # the subpath of your site, e.g. /blog
 url: "https://chechu.co" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chechusiscar
 github_username:  chechusiscar
+timezone: Asia/Manila
 
 # Build settings
 plugins:
