@@ -5,4 +5,4 @@ tags:
 - bible-study
 ---
 
-{% include image name="biblestudy.png" caption="Our last Bible study session" %}
+{% include image.html name="biblestudy.png" caption="Our last Bible study session" %}
