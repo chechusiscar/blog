@@ -5,4 +5,6 @@ tags:
 - bible-study
 ---
 
+{% raw %}
 {% include image.html name="biblestudy.png" caption="Our last Bible study session" %}
+{% endraw %}
