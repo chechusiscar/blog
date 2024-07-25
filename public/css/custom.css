@@ -20,3 +20,114 @@ figcaption {
 .profile-image {
     max-height: 128px;
 }
+
+/* Custom CSS for mobile layout */
+@media (max-width: 48em) {
+    .sidebar {
+      position: relative;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+    }
+  
+    .sidebar-about h1 {
+      font-size: 2rem;
+    }
+  
+    .sidebar-logo {
+      max-width: 150px;
+      max-height: none;
+      margin: 0 auto;
+      display: block;
+    }
+  
+    .lead {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  
+    .sidebar-nav {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.5rem;
+    }
+  
+    .sidebar-nav-item {
+      margin: 0 0.5rem;
+    }
+  
+    .sidebar-sticky {
+      position: static;
+    }
+  
+    .content {
+      padding-top: 1rem;
+      margin-left: 0;
+      margin-right: 0;
+    }
+  
+    .container {
+      max-width: 100%;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  
+    /* Adjust typography for better readability on mobile */
+    html {
+      font-size: 16px;
+    }
+  
+    h1 {
+      font-size: 2rem;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    h3 {
+      font-size: 1.25rem;
+    }
+  
+    /* Improve list styling on mobile */
+    .posts ul {
+      padding-left: 1rem;
+    }
+  
+    .posts li {
+      margin-bottom: 1rem;
+    }
+  
+    .posts li a {
+      font-size: 1.1rem;
+      line-height: 1.4;
+    }
+  }
+  
+  /* Ensure smooth transition between mobile and desktop layouts */
+  @media (min-width: 48em) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      width: 18rem;
+      text-align: left;
+    }
+  
+    .sidebar-about h1 {
+      font-size: 3.25rem;
+    }
+  
+    .sidebar-logo {
+      max-height: 30px;
+      display: initial;
+      margin: initial;
+    }
+  
+    .content {
+      margin-left: 20rem;
+      margin-right: 2rem;
+      padding-top: 4rem;
+    }
+  }
