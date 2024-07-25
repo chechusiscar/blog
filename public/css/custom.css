@@ -34,13 +34,6 @@ figcaption {
       font-size: 2rem;
     }
   
-    .sidebar-logo {
-      max-width: 150px;
-      max-height: none;
-      margin: 0 auto;
-      display: block;
-    }
-  
     .lead {
       font-size: 1rem;
       margin-bottom: 1rem;
