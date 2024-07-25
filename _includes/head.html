@@ -44,4 +44,11 @@
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+
+  
+  <!-- If post has a bible-study tag, include bible.html from includes -->
+  {% if page.tags contains 'bible-study' %}
+    {% include bible.html %}
+  {% endif %}
+
 </head>
