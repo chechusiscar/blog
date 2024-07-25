@@ -28,6 +28,8 @@ twitter_username: chechusiscar
 github_username:  chechusiscar
 timezone: Asia/Manila
 
+permalink: /:title
+
 # Build settings
 plugins:
   - jekyll-feed
