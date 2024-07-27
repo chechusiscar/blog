@@ -5,12 +5,15 @@ title: Home
 
 <div class="posts">
   {% for post in site.posts %}
-    <article>
-        <div class="feed-calendar">{{ post.date | date: "%b %d"}}</div>
-        <a href="{{ site.baseurl }}{{ post.url }}" aria-label="{{ post.title }}">
-          <h2 class="feed-title">{{ post.title }}</h2>
-        </a>
-    </article>
-    {% endfor %}
-  </ul>
+  <article class="post-item">
+    <div class="post-meta">
+      <span class="post-date">{{ post.date | date: "%b %d" }}</span>
+    </div>
+    <h2 class="post-title">
+      <a href="{{ site.baseurl }}{{ post.url }}" aria-label="{{ post.title }}">
+        {{ post.title }}
+      </a>
+    </h2>
+  </article>
+  {% endfor %}
 </div>
