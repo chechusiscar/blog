@@ -5,7 +5,7 @@ tags:
 - biteflation
 ---
 
-{% include image.html name="biteflation-feat.png"}
+{% include image.html name="biteflation-feat.png" %}
 
 As a frequent consumer of food delivery, I noticed that my budget took a hit with every price hike, which seemed to happen more often as we transitioned from the pandemic to the new normal.
 
@@ -45,6 +45,6 @@ All I knew was this could potentially lead to more interesting insights into pri
 
 *This is the first part in a series of articles sharing my data science learning journey through the Biteflation project. Next time, I’ll delve into how I processed the data and generated the dashboard below.*
 
-{% include image.html name="biteflation-viz.png"}
+{% include image.html name="biteflation-viz.png" %}
 
 *You can [view the Tableau Public visualization here](https://public.tableau.com/app/profile/chechu.siscar/viz/FastFoodPriceTrends/GraphView). You can also [browse the GitHub repo](https://github.com/chechusiscar/biteflation).*
