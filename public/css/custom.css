@@ -27,7 +27,7 @@ a {
 }
 
 a:hover {
-    text-decoration-color: var(--secondary-color);
+    text-decoration-color: var(--primary-color);
 }
 
 
