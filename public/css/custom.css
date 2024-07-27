@@ -56,8 +56,7 @@ a:hover {
 }
 
 .posts .post-meta {
-    flex: 0 0 60px;
-    margin-right: 1rem;
+    flex: 0 0 80px;
 }
 
 .posts .post-date {
@@ -80,8 +79,7 @@ a:hover {
     }
 
     .posts .post-meta {
-        flex: 0 0 50px; /* Slightly narrower on mobile */
-        margin-right: 0.5rem; /* Reduced margin for tighter layout */
+        flex: 0 0 60px; /* Slightly narrower on mobile */
     }
 
     .posts .post-title {
