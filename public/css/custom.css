@@ -1,3 +1,8 @@
+:root {
+    --primary-color: #ff1a75;
+    --secondary-color: #ea809a;
+}
+
 
 .sidebar-logo {
     max-height: 30px;
@@ -9,6 +14,31 @@
 figcaption {
     color: #9a9a9a;
     font-size: 80%;
+}
+
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+    text-underline-offset: .25rem;
+    text-decoration-thickness: .25rem;
+    text-decoration-skip-ink: none;
+    text-decoration-color: #9a9a9a;
+}
+
+a:hover {
+    text-decoration-color: var(--secondary-color);
+}
+
+
+@media (min-width: 48em) {
+    .sidebar-sticky {
+        position: absolute;
+        right: 1rem;
+        bottom: initial;
+        top: 1rem;
+        left: 1rem;
+    }
 }
 
 /* Bio page */
