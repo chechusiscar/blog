@@ -64,6 +64,7 @@ a:hover {
 .posts .post-date {
     color: var(--primary-color);
     white-space: nowrap;
+    margin-top: 0;
     font-size: 0.9rem; /* Slightly smaller font for mobile */
 }
 
