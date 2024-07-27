@@ -20,7 +20,7 @@ Restaurant-level data, at least for the most popular chains, would prove useful 
 
 ## Leveraging fast food aggregator data
 
-The Biteflation project was born when I saw an opportunity to address the first problem using fast food aggregator data.
+The [Biteflation project](https://github.com/chechusiscar/biteflation) was born when I saw an opportunity to address the first problem using fast food aggregator data.
 
 For restaurants to be listed in an aggregator’s delivery service, menus need to be stored in a consistent data format. Unlike menus on the company’s website or social media pages which are sometimes outdated, we can reasonably expect the service to reflect the latest prices. This would basically allow one to keep track of menu item prices daily and note any changes.
 
