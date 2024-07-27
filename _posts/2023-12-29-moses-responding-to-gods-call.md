@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Moses: \LResponding to God’s call"
+title: "Moses: Responding to God’s call"
 date: '2023-12-29 02:17:00'
 tags:
 - bible-study

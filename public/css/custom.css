@@ -44,7 +44,6 @@ a:hover {
 
 /* Blog page */
 
-/* Blog page */
 .posts {
     margin-top: 2rem;
 }
@@ -57,7 +56,7 @@ a:hover {
 }
 
 .posts .post-meta {
-    flex: 0 0 80px;
+    flex: 0 0 60px;
     margin-right: 1rem;
 }
 
@@ -65,7 +64,6 @@ a:hover {
     color: var(--primary-color);
     white-space: nowrap;
     margin-top: 0;
-    font-size: 0.9rem; /* Slightly smaller font for mobile */
 }
 
 .posts .post-title {
