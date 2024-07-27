@@ -44,8 +44,18 @@ a:hover {
 
 /* Blog page */
 
+.posts article {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
 .feed-calendar {
     color: var(--primary-color);
+}
+
+.feed-title {
+    margin-top: 0;
+    margin-left: 1rem;
 }
 
 /* Bio page */
