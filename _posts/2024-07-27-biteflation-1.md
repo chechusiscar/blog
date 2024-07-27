@@ -11,7 +11,7 @@ As a frequent consumer of food delivery, I noticed that my budget took a hit wit
 
 This led me to the question: how much do fast food prices increase over a period of time? Are price hikes proportionate with headline inflation (or with overall food inflation), or do they tend to be much higher, compensating for the fact that restaurant prices are typically more “sticky” than groceries?
 
-It turns out that there is no easy answer due to limited data availability, which obscures the true impact of the price hikes on consumers. On an aggregate level, the Philippine Statistics Authority reports on the price index for “food and beverage serving services,” yet no distinction is made between full-service and limited-service. Additionally, aggregated data may mask significant variations in pricing strategies among different restaurant types.
+It turns out that there is no easy answer due to limited data availability, which obscures the true impact of the price hikes on consumers. On an aggregate level, the Philippine Statistics Authority [reports on the price index for “food and beverage serving services,”](https://psa.gov.ph/price-indices/cpi-ir) yet no distinction is made between full-service and limited-service. Additionally, aggregated data may mask significant variations in pricing strategies among different restaurant types.
 
 Restaurant-level data, at least for the most popular chains, would prove useful in gaining a more nuanced perspective. There are two issues, however:
 
