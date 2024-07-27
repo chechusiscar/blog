@@ -7,7 +7,7 @@ title: Home
   {% for post in site.posts %}
     <article>
       <a href="{{ site.baseurl }}{{ post.url }}" aria-label="{{ post.title }}">
-        <div class="feed-calendar">{{ post.date | date:  %b %d}}</div>
+        <div class="feed-calendar">{{ post.date | date: "%b %d"}}</div>
         <h2 class="feed-title">{{ post.title }}</h2>
       </a>
     </article>
