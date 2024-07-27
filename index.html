@@ -6,9 +6,10 @@ title: Home
 <div class="posts">
   {% for post in site.posts %}
     <article>
-      <div class="feed-calendar">{{ post.date | date:  %b %d}}</div>
-      <h2 class="feed-title">{{ post.title }}</h2>
-      <a class="u-permalink" href="{{ site.baseurl }}{{ post.url }}" aria-label="{{ post.title }}"></a>
+      <a href="{{ site.baseurl }}{{ post.url }}" aria-label="{{ post.title }}">
+        <div class="feed-calendar">{{ post.date | date:  %b %d}}</div>
+        <h2 class="feed-title">{{ post.title }}</h2>
+      </a>
     </article>
     {% endfor %}
   </ul>
