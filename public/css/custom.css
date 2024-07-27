@@ -44,16 +44,16 @@ a:hover {
 
 /* Blog page */
 
+/* Blog page */
 .posts {
     margin-top: 2rem;
 }
-  
+
 .post-item {
     display: flex;
     flex-direction: row;
     align-items: baseline;
     margin-bottom: 1rem;
-    flex-wrap: wrap;
 }
 
 .post-meta {
@@ -64,11 +64,14 @@ a:hover {
 .post-date {
     color: var(--primary-color);
     white-space: nowrap;
+    font-size: 0.9rem; /* Slightly smaller font for mobile */
 }
 
 .post-title {
     flex: 1;
     margin: 0;
+    font-size: 1rem; /* Adjusted for mobile */
+    line-height: 1.2; /* Improved readability */
 }
 
 .post-title a {
@@ -82,21 +85,29 @@ a:hover {
 
 /* Custom CSS for mobile layout */
 @media (max-width: 48em) {
-    /* ... (keep existing mobile CSS) ... */
-
     .post-item {
-        flex-direction: column;
-        align-items: flex-start;
+        align-items: flex-start; /* Align to top for better spacing */
     }
 
     .post-meta {
-        flex: 0 0 auto;
-        margin-right: 0;
-        margin-bottom: 0.25rem;
+        flex: 0 0 60px; /* Slightly narrower on mobile */
+        margin-right: 0.5rem; /* Reduced margin for tighter layout */
     }
 
     .post-title {
-        font-size: 1.1rem;
+        padding-top: 2px; /* Slight offset to align with date visually */
+    }
+
+    /* Adjust container padding for mobile */
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    /* Ensure content doesn't overflow on very small screens */
+    .content {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
 }
   
