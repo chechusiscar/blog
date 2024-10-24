@@ -5,11 +5,13 @@ tags:
 - biteflation
 ---
 
+{% include image.html name="biteflation-feat2.png" %}
+
 After collecting hundreds of restaurant menu files, I found myself stuck. Each JSON file contained a deeply nested data structure that would make my device hang when I tried to open it. The sheer volume of data – over 1GB of plain text files – made manual analysis impractical.
 
-The breakthrough came when I discovered Microsoft Fabric, an all-in-one analytics platform that leverages familiar tools like Python, SQL, and Power Query. Coincidentally, Microsoft was running a Cloud Skills Challenge that offered certification for completing a Fabric learning path. This presented the perfect opportunity to learn a new platform while reviving a shelved project.
+The breakthrough came when I discovered Microsoft Fabric, an all-in-one analytics platform that leverages familiar tools like Python, SQL, and Power Query. Coincidentally, Microsoft was running a Cloud Skills Challenge that [offered a certification](https://learn.microsoft.com/en-us/credentials/certifications/fabric-analytics-engineer-associate/?practice-assessment-type=certification) for completing a Fabric learning path and passing an exam. This presented the perfect opportunity to learn a new platform while reviving a shelved project.
 
-To avoid getting overwhelmed, I started with a clear minimum viable product: create a dataset tracking price updates for each product variation across all restaurants in my sample. The essential data points would include:
+To avoid getting overwhelmed, I started with a clear *minimum viable product*: create a dataset tracking price updates for each product variation across all restaurants in my sample. The essential data points would include:
 - Restaurant name
 - Product name
 - Product variation (if any)
@@ -74,6 +76,7 @@ My approach followed an adapted medallion architecture, processing the data thro
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       opacity: 0;
       transition: opacity 0.5s ease-out;
+      margin-bottom: 40px;
     }
     
     .medallion-container.visible {
@@ -159,7 +162,7 @@ My approach followed an adapted medallion architecture, processing the data thro
     
     .stage-detail {
       position: absolute;
-      bottom: -80px;
+      bottom: -40px;
       font-size: 12px;
       color: #666;
       opacity: 0;
@@ -233,7 +236,6 @@ variations_df = products_df.select(explode_outer("product_variations").alias("va
 variations_df = flatten_dataframe(variations_df)
 display(variations_df)
 
-categories_df.write.format("parquet").mode("overwrite").saveAsTable("categories")
 variations_df.write.format("parquet").mode("overwrite").saveAsTable("variations")
 ```
 
@@ -244,33 +246,6 @@ The silver stage involved SQL transformations to:
 - Standardize data formats
 
 ```sql
-CREATE OR REPLACE TABLE SILVER_MENU_DATA.categories
-USING DELTA
-LOCATION 'Tables/categories'
-AS
-WITH extracted_data AS (
-  SELECT
-    *,
-    -- Extract the last part of the filename (after the last '/')
-    regexp_extract(filename, '/([^/]+)$', 1) AS short_filename
-  FROM
-    BRONZE_MENU_DATA.categories
-)
-SELECT
-    short_filename,
-    url_key,
-    restaurant_code,
-    menu_categories_code,
-    menu_categories_description,
-    menu_categories_id,
-    menu_categories_is_popular_category,
-    menu_categories_name
-FROM
-    extracted_data
-WHERE
-    restaurant_code IS NOT NULL 
-    AND menu_categories_id IS NOT NULL
-
 CREATE OR REPLACE TABLE SILVER_MENU_DATA.variations
 USING DELTA
 LOCATION 'Tables/variations'
@@ -305,8 +280,10 @@ WHERE
 ### Gold stage: Analysis-ready dataset
 The final gold dataset was prepared using Power Query, where I:
 - Removed duplicate prices (keeping only the first date of each price change)
-- Retained only the MVP columns defined above, combining both the categories and variations tables
+- Retained only the MVP columns defined above apart from some identifiers
 - Created the final structure used for visualization
+
+{% include image.html name="biteflation-pq.png" %}
 
 ## Data cleaning challenges
 
@@ -326,13 +303,15 @@ A future enhancement could leverage AI to identify and reconcile these more comp
 
 Several features of Microsoft Fabric proved particularly valuable:
 
-1. **Cloud processing:** The ability to run data transformations in the cloud meant I could process large datasets in the background without overwhelming my local machine.
+1. **Cloud processing.** The ability to run data transformations in the cloud meant I could process large datasets in the background without overwhelming my local machine.
 
-2. **VS Code integration:** Seamless integration with Visual Studio Code maintained my preferred development environment while accessing Fabric's capabilities.
+2. **VS Code integration.** Seamless integration with Visual Studio Code maintained my preferred development environment while accessing Fabric's capabilities.
 
-3. **Power Query:** The low-code approach to data transformations made common operations accessible, especially useful for those newer to SQL or Python.
+3. **Power Query.** The low-code approach to data transformations made common operations accessible, especially useful for those newer to SQL or Python.
 
-4. **End-to-end analytics:** While I ultimately used Tableau for visualization (due to trial limitations), Fabric's direct integration with Power BI showcases its potential as a complete analytics solution.
+4. **End-to-end analytics.** While I ultimately used Tableau for visualization (due to trial limitations), Fabric's direct integration with Power BI showcases its potential as a complete analytics solution.
+
+{% include image.html name="biteflation-pbi.png" caption="Alternative visualization created using the Power BI service. It was very convenient to build as it was directly connected to the Fabric data warehouse."%}
 
 Though I didn't get to explore it during my trial, Microsoft's Copilot integration could potentially streamline future analysis workflows.
 
@@ -342,11 +321,11 @@ Though I didn't get to explore it during my trial, Microsoft's Copilot integrati
 
 Initial analysis reveals several interesting patterns:
 
-- **Inflationary pressure:** The general trend shows steady price increases across items and restaurants, reflecting broader economic pressures.
+- **Inflationary pressure.** The general trend shows steady price increases across items and restaurants, reflecting broader economic pressures.
 
-- **Strategic pricing:** Core items like fried chicken show remarkable price stability, occasionally even decreasing. This suggests their use as loss leaders to drive customer traffic.
+- **Strategic pricing.** Core items like fried chicken show remarkable price stability, occasionally even decreasing. This suggests their use as loss leaders to drive customer traffic.
 
-- **Competitive dynamics:** Similar price movements across restaurants, particularly evident in sundae pricing, hint at active competitive monitoring and matching.
+- **Competitive dynamics.** Similar price movements across restaurants, particularly evident in sundae pricing, hint at active competitive monitoring and matching.
 
 ## Next steps
 
