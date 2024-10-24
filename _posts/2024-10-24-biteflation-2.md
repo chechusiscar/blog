@@ -5,7 +5,7 @@ tags:
 - biteflation
 ---
 
-{% include image.html name="biteflation-feat2.png" %}
+{% include image.html name="biteflation-feat2.jpg" %}
 
 After collecting hundreds of restaurant menu files, I found myself stuck. Each JSON file contained a deeply nested data structure that would make my device hang when I tried to open it. The sheer volume of data – over 1GB of plain text files – made manual analysis impractical.
 
