@@ -1,13 +1,16 @@
 ---
 layout: default
-title: NT in 2024
-permalink: /nt-2024/
+title: NT Series
+permalink: /nt/
+redirect_from:
+  - /nt-2024/
+  - /nt-2025/
 ---
 
 <div class="posts-tag">
   {% for post in site.posts %}
-  <!-- if post title starts with "NT in 2024"-->
-  {% if post.title contains "NT in 2024" %}
+  <!-- if post title starts with "NT-->
+  {% if post.title contains "NT" %}
   <div class="post">
     <h1 class="post-title">
       <a href="{{ site.baseurl }}{{ post.url }}">
