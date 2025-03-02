@@ -22,13 +22,13 @@ title: Chechu Siscar
 email: chechu.siscar@me.com
 description: >- # this means to ignore newlines until "baseurl:"
   Musings from my personal and professional journey
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://blog.chechu.co" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: chechusiscar
 github_username:  chechusiscar
 timezone: Asia/Manila
 
-permalink: /:title
+permalink: :title
 
 # Build settings
 plugins:
